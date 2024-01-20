@@ -14,7 +14,7 @@
         margin-bottom: 2rem;
         font-weight: 600;
     }
-    width: 25vw;
+    width: 25%;
     >p:last-child{
         text-align: center;
     }
@@ -46,5 +46,21 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        >input{
+            accent-color: #ed5684;
+        }
+    }
+}
+
+@media screen and (width<=500px) {
+    .loginComponent{
+        width: 100vw;
+        border-radius: 0%;
+    }    
+}
+
+@media screen and (500px<width<1000px) {
+    .loginComponent{
+        width: 50vw;
     }
 }

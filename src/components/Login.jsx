@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Login.module.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -8,9 +9,9 @@ const Login = () => {
         <p>LOGIN</p>
         <form className={styles.loginForm}>
           <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" autoComplete="off" required/>
           <label htmlFor="password">Password</label>
-          <input type="password" name="password" id="password" />
+          <input type="password" name="password" id="password" required/>
           <label htmlFor="checkbox">
             <input type="checkbox" name="checkbox" id="checkbox" />
             Remember me?
@@ -18,7 +19,7 @@ const Login = () => {
           <button type="submit">LOGIN</button>
         </form>
         <p>
-          Need an account? <a href="#">SIGN UP</a>
+          Need an account? <Link to="/signup">SIGN UP</Link>
         </p>
       </div>
     </div>

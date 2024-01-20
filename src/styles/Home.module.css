@@ -1,0 +1,10 @@
+.home {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 0, 0.45),
+      rgba(255, 255, 0, 0.45)
+    ),
+    /* your image */ url(../assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
