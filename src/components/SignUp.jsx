@@ -25,7 +25,7 @@ const SignUp = () => {
           <input type="password" name="password" id="password" required />
           <label htmlFor="password">Confirm Password</label>
           <input type="password" name="password" id="password" required />
-          <button type="submit">LOGIN</button>
+          <button type="submit">SIGN UP</button>
         </form>
         <p>
           Already a user? <Link to="/login">LOGIN</Link>
