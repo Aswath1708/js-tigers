@@ -1,66 +1,77 @@
-.loginPage{
-    background-color: #6d9ac4;
-    height: 100vh;
+.loginPage {
+  background-color: #6d9ac4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > h1 {
+    position: absolute;
+    top: 10%;
+    > a {
+      color: #000;
+      > span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.loginComponent {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  > p:first-child {
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  width: 25%;
+  > p:last-child {
+    text-align: center;
+  }
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  > button {
+    margin: 1rem 0;
+    border: none;
+    background-color: #ed5684;
+    color: white;
+    font-weight: 600;
+  }
+  > input {
+    margin-bottom: 1rem;
+    border: 1px solid #00000055;
+  }
+  > label {
+    margin-bottom: 5px;
+  }
+
+  > input,
+  > button {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+  }
+  > label[for="checkbox"] {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.loginComponent{
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    >p:first-child{
-        margin-bottom: 2rem;
-        font-weight: 600;
+    gap: 10px;
+    > input {
+      accent-color: #ed5684;
     }
-    width: 25%;
-    >p:last-child{
-        text-align: center;
-    }
-}
-
-.loginForm{
-    display: flex;
-    flex-direction: column;
-    >button{
-        margin: 1rem 0;
-        border: none;
-        background-color: #ed5684;
-        color: white;
-        font-weight: 600;
-    }
-    >input{
-        margin-bottom: 1rem;
-        border: 1px solid #00000055;
-    }
-    >label{
-        margin-bottom: 5px;
-    }
-
-    >input,>button{
-        padding: 0.75rem;
-        border-radius: 0.25rem;
-    }
-    >label[for="checkbox"]{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        >input{
-            accent-color: #ed5684;
-        }
-    }
+  }
 }
 
 @media screen and (width<=500px) {
-    .loginComponent{
-        width: 100vw;
-        border-radius: 0%;
-    }    
+  .loginComponent {
+    width: 100vw;
+    border-radius: 0%;
+  }
 }
 
 @media screen and (500px<width<1000px) {
-    .loginComponent{
-        width: 50vw;
-    }
+  .loginComponent {
+    width: 50vw;
+  }
 }

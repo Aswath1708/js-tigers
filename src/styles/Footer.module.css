@@ -1,0 +1,13 @@
+.footer {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+@media screen and (width<600px) {
+  .footer {
+    padding: 0.75rem;
+    font-size: 12px;
+  }
+}

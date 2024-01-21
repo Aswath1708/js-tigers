@@ -1,34 +1,36 @@
-.navBar{
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  > h1 {
+    > a {
+      color: #333;
+    }
+  }
+  > ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    >h1{
+    gap: 1rem;
+    > li {
+      > a {
+        border: 1px solid #333;
+        padding: 1rem;
         color: #333;
+        border-radius: 0.25rem;
+      }
     }
-    >ul{
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-        >li{
-            >a{
-                border: 1px solid #333;
-                padding: 1rem;
-                color: #333;
-                border-radius: 0.25rem;
-            }
-        }
-    }
+  }
 }
 
-@media screen and (width<=600px){
-    .navBar{
-        flex-direction: column;
-        >ul{
-            gap: 0.25rem;
-            >li>a{
-                padding: 0.25rem;
-                border: none;
-            }
-        }
+@media screen and (width<=600px) {
+  .navBar {
+    flex-direction: column;
+    > ul {
+      gap: 0.25rem;
+      > li > a {
+        padding: 0.25rem;
+        border: none;
+      }
     }
+  }
 }
